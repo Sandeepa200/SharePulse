@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1BEBE"
+    tools:context=".AdminLogin">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="278dp"
+        android:layout_height="268dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113"
+        app:srcCompat="@drawable/adminpic" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.32">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8E2E2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/adminUsername"
+                style="@style/Widget.Material3.MaterialTimePicker.Display.TextInputEditText"
+                android:layout_width="300dp"
+                android:layout_height="41dp"
+                android:layout_marginVertical="30dp"
+                android:background="@drawable/roundsqr"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Enter your User Name"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:lineSpacingExtra="10sp"
+                android:maxLength="100"
+                android:paddingStart="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/adminPassword"
+                style="@style/Widget.Material3.MaterialTimePicker.Display.TextInputEditText"
+                android:layout_width="300dp"
+                android:layout_height="41dp"
+                android:background="@drawable/roundsqr"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Enter your Password"
+                android:includeFontPadding="false"
+                android:inputType="textPassword"
+                android:lineSpacingExtra="10sp"
+                android:maxLength="100"
+                android:paddingStart="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/adminLoginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:padding="10dp"
+                android:text="Login" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar8"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

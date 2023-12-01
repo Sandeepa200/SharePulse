@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reset_screen01">
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="274dp"
+        android:layout_height="43dp"
+        android:background="@drawable/roundsqr"
+        android:drawablePadding="10dp"
+        android:text="Check your Confimation Email"
+        android:paddingStart="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719"/>
+
+    <Button
+        android:id="@+id/send_otp_btn"
+        android:layout_width="237dp"
+        android:layout_height="58dp"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:background="#11111111"
+        android:elevation="0dp"
+        android:text="Send Confimation"
+        android:textColor="#FF0202"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="118dp"
+        android:layout_height="50dp"
+        android:background="#FF0202"
+        android:text="CANCEL"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.797" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="294dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112"
+        app:srcCompat="@drawable/loginlogo" />
+
+    <EditText
+        android:id="@+id/email_input"
+        style="@style/Widget.Material3.MaterialTimePicker.Display.TextInputEditText"
+        android:layout_width="356dp"
+        android:layout_height="41dp"
+        android:background="@drawable/roundsqr"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter your email"
+        android:includeFontPadding="false"
+        android:inputType="textEmailAddress"
+        android:lineSpacingExtra="10sp"
+        android:maxLength="100"
+        android:paddingStart="10dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "807235474619",
+    "project_id": "sharepulse-9db5e",
+    "storage_bucket": "sharepulse-9db5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807235474619:android:fe4ed375474aba26acc59e",
+        "android_client_info": {
+          "package_name": "com.example.sharepulse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807235474619-p2jle7n75dq183914h8sglt7on8ao5md.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZnNOlyS2OR_t08hg0YCTTCAR4y9HLRAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807235474619-p2jle7n75dq183914h8sglt7on8ao5md.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

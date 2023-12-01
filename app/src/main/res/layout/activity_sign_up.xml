@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="259dp"
+            android:layout_height="52dp"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:layout_marginBottom="30dp"
+            android:textSize="40sp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/Fname"
+                        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundsquarborder"
+                        android:ems="10"
+                        android:hint="First Name"
+                        android:inputType="textPersonName"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textAlignment="textStart"
+                        android:textColor="#020202"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/Lname"
+                        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/roundsquarborder"
+                        android:ems="10"
+                        android:hint="Last Name"
+                        android:inputType="textPersonName"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textAlignment="textStart"
+                        android:textColor="#020202"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/userEmail"
+                    style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/roundsquarborder"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#020202"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/mobileNo"
+                    style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/roundsquarborder"
+                    android:ems="10"
+                    android:hint="Mobile Number"
+                    android:inputType="phone"
+                    android:textColor="#020202"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Gender">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/selectGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <EditText
+                    android:id="@+id/NIC"
+                    style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/roundsquarborder"
+                    android:ems="10"
+                    android:hint="National Identity card Number"
+                    android:inputType="text"
+                    android:textColor="#020202"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/inputBirthDate"
+                        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+                        android:layout_width="159dp"
+                        android:layout_height="52dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/roundsquarborder"
+                        android:ems="10"
+                        android:hint="Date of Birth"
+                        android:inputType="date"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textAlignment="textStart"
+                        android:textColor="#020202"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/dateSelect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:height="60dp"
+                        android:text="Select Date" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_preview"
+                        android:layout_width="260dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white"
+                        android:src="@drawable/imageicon" />
+
+                    <Button
+                        android:id="@+id/choose_image_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Choose Image"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="307dp"
+                android:layout_height="61dp"
+                android:text="Next " />
+
+            <Button
+                android:id="@+id/movetoLogin"
+                android:layout_width="322dp"
+                android:layout_height="39dp"
+                android:layout_margin="5dp"
+                android:background="#00000000"
+                android:elevation="0dp"
+                android:text="Already a User? LOGIN"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
